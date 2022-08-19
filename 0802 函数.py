@@ -82,5 +82,10 @@ def show_completed_models(completed_models):
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs, completed_models)
-show_completed_models(completed_models)
+# print_models(unprinted_designs, completed_models)
+# show_completed_models(completed_models)
+
+# 8.4.2 禁止函数修改列表
+# function_name(list_name[:])  # 传递列表的副本
+print_models(unprinted_designs[:], completed_models)
+print(unprinted_designs)
